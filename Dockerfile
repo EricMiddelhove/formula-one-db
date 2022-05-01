@@ -12,9 +12,9 @@ RUN npm run build
 COPY /src/public /workDir/dist/public
 
 ARG ENV="production"
-ENV PORT 4500
+ENV PORT 80
 ENV NODE_ENV=${ENV}
 
-EXPOSE 4500
+EXPOSE 80
 
 CMD [ "node", "./dist/bin/www" ]

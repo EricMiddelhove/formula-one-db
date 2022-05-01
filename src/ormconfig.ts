@@ -7,7 +7,7 @@ let migrations = [];
 let subscribers = [];
 
 switch (env) {
-  case 'prod':
+  case 'production':
     entities = ['dist/models/**/*.{js,ts}'];
     migrations = ['dist/migration/**/*.{js,ts}'];
     subscribers = ['dist/subscriber/**/*.{js,ts}'];
